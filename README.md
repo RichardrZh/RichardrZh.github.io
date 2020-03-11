@@ -1,3 +1,3 @@
 # RichardrZh.github.io
-Personal Website
+Personal Website:
 https://richardrzh.github.io
