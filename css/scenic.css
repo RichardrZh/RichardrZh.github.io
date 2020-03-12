@@ -67,3 +67,7 @@ main section #skew {
     transform-origin: top left;
     z-index: -1;
 }
+
+nav {
+    position: fixed;
+}
