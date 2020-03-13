@@ -4,8 +4,8 @@
 }
 
 body {
-    background-color: lightgray;
     background-image: url("../resources/background.jpg");
+    background-color: lightgray;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -66,8 +66,67 @@ main section #skew {
     transform: skewY(-10deg);
     transform-origin: top left;
     z-index: -1;
+    transition: 0.5s;
 }
 
 nav {
-    position: fixed;
+    justify-content: space-evenly;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 97vw;
+}
+
+nav .item {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+
+    width: 20vw;
+    height: 30vw;
+    box-shadow: 5px 5px 2px gray;
+
+    box-sizing: border-box;
+    overflow: hidden;
+
+    border-radius: 3em;
+    background-color: #384b7b;
+}
+
+nav .item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    clip-path: circle(26vw at 10vw 6vw);
+    transition: 0.5s;
+}
+
+nav .item:hover a {
+    clip-path: circle(4.75vw at 10vw 6.25vw);
+}
+
+nav a:nth-child(1) p {
+    color: white;
+}
+
+nav a:nth-child(2) p {
+    color: lightskyblue;
+}
+
+nav a:nth-child(3) p {
+    color: lightgoldenrodyellow;
+}
+
+nav a:nth-child(4) p {
+    color: lightgreen;
+}
+
+#spacing {
+    display: block;
+    height: 6vw;
+    padding: 3vw 0;
+    transition: 0.5s;
 }
