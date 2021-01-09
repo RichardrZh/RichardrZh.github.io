@@ -6,50 +6,130 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
 		<!-- first website -->
 		<title>Richard Zhuang</title>
 
-		<!-- scenic website sources -->
-		<link rel="stylesheet" type="text/css" href="css/scenic.css">
-		<script rel="script" type="text/javascript" src="scripts/scenic.js"></script>
-	</head>
+		<!-- Stylesheets -->
+		<link id="main_css_style" rel="stylesheet" type="text/css" href="css/dark_minimalist.css">
+
+		<!-- Scripts -->
+		<script rel="script" type="text/javascript" src="scripts/swap_css.js"></script>
+
+		<!-- Fonts -->
+
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		</head>
 
 	<body>
 
+		<!-- Navigation -->
 		<header>
-			<!-- invisible img used to set dimensions of header -->
-			<img id="header_dimension" src="resources/background.jpg">
-			<div id="header_container">
-				<div id="header_content">
-					<h1>Hi! I'm <span id="name">Richard Zhuang</span>.</h1>
-					<h2>Programmer, Web Developer, Computer Enthusiast</h2>
-				</div>
-			</div>
+			<nav>
+				<ul>
+					<li><a href="#welcome_container">Home</a></li>
+					<li><a href="#about_container">About</a></li>
+					<li><a href="#projects_container">Projects</a></li>
+					<li><a href="#contact_container">Contact Me</a></li>
+					<li><button onclick="console.log('test')" type="button"><i class="fa fa-bars 1x"></i></button></li>
+				</ul>
+			</nav>
 		</header>
 
-		<main>
-			<section>
-				<span id="skew">
-					<p>Content! XD</p>
-				</span>
-				<div id="spacing"></div>
-				<nav>
-					<div class="item"><a href="#"><p>About</p></a></div>
-					<div class="item"><a href="#"><p>Projects/Github</p></a></div>
-					<div class="item"><a href="#"><p>LinkedIn</p></a></div>
-					<div class="item"><a href="#"><p>Contact Me</p></a></div>
-				</nav>
+		<!-- Welcome -->
+		<div class="section_wrapper">
+			<section id="welcome_container">
+
+				<canvas>
+					<img src="#" alt="description">
+				</canvas>
+
+				<div class="welcome_item_container">
+					<h1>
+						Hi, <strong>I'm Richard</strong> <span class="emoticon">^_^</span>
+						<em>Programmer, Web Developer, Computer Enthusiast</em>
+					</h1>
+				</div>
+				<!-- TODO: Add js for button onclick -->
+				<div class="welcome_item_container">
+					<h2>Don't like the style of the page? Check out other styles below!</h2>
+					<div class="button_container">
+						<button onclick="swapCSS('dark_minimalist.css')" type="button">CSS 1</button>
+						<button onclick="swapCSS('parallax_scroll.css')" type="button">CSS 2</button>
+						<button onclick="swapCSS('canvas_panels.css')" type="button">CSS 3</button>
+					</div>
+				</div>
+
 			</section>
+		</div>
 
-			<!-- todo: maybe add more content that changes w/javascript and nav button pressed -->
+		<!-- About -->
+		<div class="section_wrapper">
+			<section id="about_container">
+				<div id="about">
+					<h1>About Richard Zhuang</h2>
+					<p>
+						[text here] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed tincidunt est. Morbi in molestie enim. Suspendisse facilisis rutrum lorem ac porta. Aenean pellentesque accumsan nisl, vel ullamcorper augue ornare et. Nullam placerat enim eu odio tincidunt, ac facilisis mauris mollis. Mauris a laoreet tortor, in ullamcorper ligula. Maecenas nec metus aliquet, pharetra eros ut, pharetra neque. Nam bibendum elementum nisi, at blandit elit ornare vel. Integer nec odio condimentum, pretium quam quis, faucibus dolor. Cras sagittis enim at dui dictum, laoreet pharetra nibh fringilla.
+					</p>
+				</div>
+			</section>
+		</div>
 
-			<!-- eg:
-			<section> CONTENT </section>
-			if so, update css tag selectors for section to section:nth-child(n) etc...
-			-->
+		<!-- Projects -->
+		<div class="section_wrapper">
+			<div id="projects_section_container">
+				<h1>My Projects</h1>
 
-		</main>
+				<section id="projects_container">
+					<div class="project">
+						<h2>Project 1</h2>
+						<p>
+							[About Project 1] Proin convallis sed enim quis scelerisque. Suspendisse in nibh ut lectus venenatis lobortis. Nullam vulputate est eget orci posuere laoreet. Curabitur laoreet tellus elit, ut bibendum ipsum feugiat et.
+						</p>
+						<a href="#">Click Here</a>
+					</div>
+
+					<div class="project">
+						<h2>Project 2</h2>
+						<p>
+							[About Project 2] Curabitur tristique mi in ligula scelerisque accumsan. Ut tempor vulputate hendrerit. Integer placerat odio at erat suscipit, sed pellentesque tellus laoreet.
+						</p>
+						<a href="#">Click Here</a>
+					</div>
+
+					<div class="project">
+						<h2>Project 3</h2>
+						<p>
+							[About Project 3] Pellentesque a commodo mauris, ac vehicula lorem. Sed dictum vehicula massa, cursus ornare metus semper ut. Nunc blandit neque quis tellus porttitor, ut luctus velit dignissim.
+						</p>
+						<a href="#">Click Here</a>
+					</div>
+
+				</section>
+			</div>
+		</div>
+
+		<div class="section_wrapper">
+			<section id="contact_container">
+				<!-- Contact Me -->
+				<div id="contact_me">
+					<h1>Contact Me</h2>
+					<form>
+						<!--TODO-->
+					</form>
+				</div>
+			</section>
+		</div>
+
+		<!-- footer?
+		<div class="section_wrapper">
+			<footer>
+				TODO: maybe contact me or social media etc really idk
+				do i even need a footer?
+			</footer>
+		</div>
+		-->
 
 	</body>
 
